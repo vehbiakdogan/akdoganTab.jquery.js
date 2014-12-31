@@ -1,0 +1,56 @@
+/**
+* 	@author: Vehbi AKDOGAN
+* 	@mail: mf.leqelyy@gmail.com || info@vehbiakdogan.com
+* 	@website: vehbiakdogan.com
+* 	@office: ajansorkestra.com
+*/
+*,body {
+	padding:0;
+	border:0;
+	margin:0;
+	font-weight: normal;
+}
+a,img {
+	border:0;
+	text-decoration:none;
+}
+ul {
+	padding:0;
+	margin:0;
+}
+ul li {
+	list-style:none;
+}
+.temizle {
+	clear:both;
+}
+.ortala {
+	width:1000px;
+	margin:0 auto;
+}
+ul.tab {
+	margin-left:-5px;
+}
+ul.tab li {
+	float:left;
+	font:16px arial;
+	color:#555;
+	padding:5px 15px;
+	border:1px solid #333;
+	font-weight: bold;
+	margin-left:5px;
+	cursor: pointer;
+}
+ul.tab li.aktif {
+	background-color:#555;
+	color:#fff;
+}
+.icerik {
+	padding:10px;
+	border:1px solid #aaa;
+	margin-top:5px;
+}
+ul.anlatim li b {
+	font-weight: bold;
+	color:#f00;
+}
