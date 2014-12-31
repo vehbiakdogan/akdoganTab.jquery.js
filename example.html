@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Vehbi Akdoğan Tab Eklentisi </title>
+	<meta name="description" content="Vehbi Akdoğan Tab Eklentisi, jQuery tab eklentisi  " />
+	<meta name="keyword" content="Vehbi Akdoğan Tab Eklentisi, jQuery tab eklentisi   " />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta name="author" content="Vehbi Akdogan" />
+	<link rel="stylesheet" href="style/style.css?v=1.0" />
+	<script type="text/javascript" src="http://vehbiakdogan.com/demolar/_jq.js"></script>
+	<script type="text/javascript" src="js/akdoganTab.jquery.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("ul.tab").akdoganTab({
+				aktifIndis: 0, // default değer 0
+				tabDivAktif: "aktif", // default değer aktif 
+				tabIcerik :$(".icerik"), // default değer $(".icerik")
+				tabEffect: "fade" // default değer null 
+			});
+			
+		});
+	</script>
+</head>
+<body>
+	<div class="ortala">
+	<h2 align="center">akdoganTab jQuery Tab Eklentisi</h2>
+		<ul class="tab">
+			<li> Kullanımı </li>
+			<li> Parametreler</li>
+			<li> Html Yapısı</li>
+		</ul>
+		<div class="temizle"></div>
+		<div class="icerik">
+		<code>
+			$("ul.tab").akdoganTab();
+		</code>
+		</div>
+		<div class="icerik">
+			<ul class="anlatim">
+				<li> <b>aktifIndis :</b> Tab Eklentisinin açılışta hangi Tab içeriğinin görünür olacağını belirler.<br/> Default Değeri 0 dır. Yani 1. Tab Görünür Olacaktır.</li>
+				<li> <b>tabDivAktif :</b> Aktif Olan Tab ın classıdır. default değeri "<b>aktif</b>" dir.</li>
+				<li> <b>tabIcerik :</b> Tab İçeriklerine Ait Nesneyi Gösterir. Default Değeri " <b> $(".icerik")</b>" tir.</li>
+				<li> <b>tabEffect :</b> Tab Geçişi Arasındaki Effekti Gösterir. Default değeri null dur. yani effekt yoktur. <br/>
+					<span style="border-bottom:1px solid #333;"> Alabileceği Değerler:</span> <br/>
+					<ul>
+						<li> <b>slide: </b> slideDown effecti ile değişir.</li>
+						<li> <b>fade: </b> fadeIn effecti ile değişir.</li>
+						<li> <b>slow: </b> slow effecti ile değişir.</li>
+						<li> <b>ease: </b> easeIn effecti ile değişir.</li>
+						<li> <b>null: </b> effect olmadan değişir.</li>
+					</ul>
+				</li>
+				
+			</ul>
+		</div>
+		<div class="icerik">
+			&lt;ul class=&quot;tab&quot;&gt; <br/>
+				&lt;li&gt; Tab&lt;/li&gt;<br/>
+				&lt;li&gt; Tab&lt;/li&gt;<br/>
+				&lt;li&gt; Tab&lt;/li&gt;<br/>
+			&lt;/ul&gt;<br/>
+			&lt;div class=&quot;icerik&quot;&gt;&lt;/div&gt;<br/>
+			&lt;div class=&quot;icerik&quot;&gt;&lt;/div&gt;<br/>
+			&lt;div class=&quot;icerik&quot;&gt;&lt;/div&gt;<br/>
+		</div>
+	</div>
+</body>
+</html>
+
+
